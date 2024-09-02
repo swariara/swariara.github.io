@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+        <div class="logo"></div>
+        <div>
+            <ul class="nav-links">
+               <li><a href="#about">About</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#experience">Experience</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+        <div class="logo">Sharon Muiruri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+               <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+               <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+               <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+               <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile3.jpeg" alt="Sharon Muiruri profile picture "/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sharon Muiruri</h1>
+            <p class="section__text__p2">Data Scientist</p>
+            <!-- <div class="btn-container">
+                <button class="btn btn-color-2"
+                 onclick="window.open('./assets/Sharon Muiruri CV.pdf')">
+                Download CV
+                </button>
+                <button class="btn btn-color-1"
+                onclick="location.href='./#contact'">
+                Contact Me
+                </button> -->
+            <!-- </div> -->
+            <div id="socials-container">
+                <img
+                src="./assets/linkedin3.png" alt="My Linkedin Profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/sharon-muiruri'"/>
+                <img
+                src="./assets/github3.png" alt="My Github Profile"
+                class="icon"
+                onclick="location.href='https://github.com/swariara'"/>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container"> 
+                    <div class="text-container">
+                        <p>I am a dedicated and results-oriented data scientist with a proven track record of designing and implementing cutting-edge solutions. Proficient in Python and SQL, with strong expertise in data analysis and machine learning fundamentals. I am passionate about gaining new skills and I aim to excel in my career through continuously learning and seeking opportunities that widen my capabilities. </p>
+                    </div>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2"
+                         onclick="window.open('./assets/Sharon Muiruri - CV.pdf')">
+                        Download CV
+                        </button>
+                        <button class="btn btn-color-1"
+                        onclick="location.href='./#contact'">
+                        Contact Me
+                        </button>   
+                </div>
+            </div>  
+        </div>       
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <p class="section__text__p1">My Skills</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills container">
+              <div class="row skills-content">
+                <div class="col-lg-6">
+                  <span class="skill"><b>Core Programming Languages:</b> Python, SQL</span>
+                  <hr>
+                  <span class="skill"><b>Data Analysis & Visualization:</b> Numpy, Pandas, Matplotlib, Tableau</span>
+                  <hr>
+                  <span class="skill"><b>Machine Learning & Deep Learning:</b> Scikit-learn,TensorFlow, PyTorch; expertise in Regression, Classification, Clustering, Natural Language Processing</span>
+                <hr>
+                  <span class="skill"><b>Cloud Platforms:</b> Azure</span>
+                  <hr>
+                  <span class="skill"><b>MLOps and Monitoring:</b> Docker, Kubernetes</span>
+                  <hr>
+                  <!-- <span class="skill"><b>CI/CD and Automation Tools:</b> GitHub Actions</span>
+                  <hr> -->
+                  <span class="skill"><b>Version Control:</b> Git</span>
+                </div>
+              </div>
+          </div>
+          <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                  <!-- EXPERIENCE -->
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                    <h3>Work<h3>
+                        <div class="timeline">
+                            <!-- timeline item -->
+                            <div class="timeline-item">
+                                <div class="circle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i>2022
+                                </h3>
+                                <h4 class="timeline-title">Data Science Intern</h4>
+                                <h4 class="timeline__subtitle">Flapmax AI Institute</h4>
+                                <br>
+                                <p class="timeline-text">
+                                    <ul>                  
+                                        <li>
+                                            Contribute to the deployment and customisation of a Commerce Marketplace SaaS Accelerator on Microsoft Azure.
+
+                                        </li>
+                                        <li>
+                                            Contribute to the deployment of two FastAPI applications on kubernetes and docker container.
+                                        </li>
+                                        <li>
+                                           Collaborated with other development teams to build a car damage detection model using Mask-RCNN.
+                                        </li>
+                                    </p>
+                                    </ul>
+                            </div>
+                        </div>     
+                    </div>  
+
+                        <!-- EDUCATION -->
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <!-- timeline item -->
+                            <div class="timeline-item">
+                               <div class="circle-dot"></div>
+                               <h3 class="timeline-date">
+                                   <i class="fa fa-calendar"></i>2022-2023
+                               </h3>
+                               <h4 class="timeline-title">Data Science and Machine Learning</h4>
+                               <h4 class="timeline__subtitle">Massachusetts Institute of Technology</h4>
+                               <h4 class="timeline__subtitle">Grade: A</h4>
+                               <p class="timeline-text">
+                                Enrolled in Data Science and Machine Learning program where I gained skills in python, statistics, data analysis and visualization, machine learning and computer vision.                                                               
+                               </p>
+                           </div>
+                           
+                           <div class="timeline-item">
+                               <div class="circle-dot"></div>
+                               <h3 class="timeline-date">
+                                   <i class="fa fa-calendar"></i>2018-2022
+                               </h3>
+                               <h4 class="timeline-title">Business Information Technology</h4>
+                               <h4 class="timeline__subtitle">Jomo Keyatta University of Agriculture and Technology</h4>
+                               <h4 class="timeline__subtitle">Grade: Second Class Honours</h4>
+                               <p class="timeline-text">
+                                Pursued a Bachelor's degree in Business Information Technology where I acquired skills in various areas such as programming, data structures and algorithms, networking and database systems.                                         
+                               </p>
+                           </div>           
+                       </div>
+                   </div>
+               </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.jpeg"
+                    alt="Project 1"
+                    class="project-img"/>
+                </div>
+                <h2 class="project-title">Credit Card Default Prediction</h2>
+                <p>
+                    <ul class="padd-15">
+                   <li> 
+                    Developed a model to predict which customer will default his/her credit card payment.
+                    </li>
+                     <li>
+                        Utilised Python libraries such as sci-kit-learn and pandas for data cleaning, analysis and modelling. I then performed feature engineering and used SMOTE to balance the dataset.
+                     </li>
+                     <li>
+                        Built 5 classifier models: Logistic Regression, Decision Trees Classifier, Random Forest Classifier, Gradient Boosting and XGBoost. The best performing model was the Random Forest with the highest ROC AUC score.
+                     </li> 
+                    </ul>
+                </p> 
+                <br>
+                <br>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/swariara/credit-card-default-prediction'">
+                     Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.jpg"
+                    alt="Project 2"
+                    class="project-img"/>
+                 </div>
+                <h2 class="project-title">Store Sales Forecasting</h2>
+                 <p >
+                    <ul class="padd-15">
+                         <li>
+                            Engineered a predictive model to forecast 6 weeks of daily sales for 1115 Rossman stores. 
+                        </li>
+                        <li>
+                            I utilised Python libraries such as sci-kit-learn and pandas for data analysis and modelling, imputed the missing values and performed outlier treatment using Z-score.
+                        </li>
+                        <li>
+                        I fit 4 regression models: Linear Regression, Stochastic Gradient Descent Regressor, Decision Trees Regressor and Random Forest Regressor. The best performing model was the Random Forest with the lowest RMSE score of 726, and highest R2 score of 0.96.
+                        </li>
+                    </ul>
+                </p>
+                <br>  
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="https://github.com/swariara/store_sales_forecasting'">
+                     Github
+                    </button>
+                </div>
+            </div>
+             <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.jpeg"
+                    alt="Project 3"
+                    class="project-img"/>
+                </div>
+                <h2 class="project-title">Hotel Booking Cancellation Prediction</h2>
+                 <p >
+                    <ul class="padd-15">
+                        <li>
+                           Developed a model that can predict which booking in the hotel is going to be cancelled in advance and also help in formulating profitable policies for cancellations and refunds. 
+                        </li>
+                        <li>
+                            Performed univariate and bivariate analysis to analyse the data and find which factors have a high influence on booking cancellations in the hotel.
+                        </li>
+                        <li>
+                            Built 4 classification models: Logistic Regression, SVM, Decision Trees and Random Forest. The best performing model was the Random Forest with an accuracy score of 90%. 
+                        </li>
+                    </ul>
+                </p> 
+                <br>   
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="'https://github.com/swariara/hotel-booking-cancellation-prediction'">
+                     Github
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+               <img src="./assets/phone3.png" 
+               alt="Phone icon" 
+               class="icon contact-icon"
+               />
+               
+             <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">+254-745-728-616</span>
+            </div>
+            </div>
+            <div class="contact-info-container">
+               <img src="./assets/email3.png" 
+               alt="Email icon" 
+               class="icon contact-icon"
+               />
+               <div>
+                    <h3 class="contact__title">Email</h3>
+                    <p><a href="mailto:sharnmuiruri44@gmail.com">sharnmuiruri44@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-info-container">
+               <img src="./assets/location3.png" 
+               alt="Location icon" 
+               class="icon contact-icon"
+               />
+               
+             <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Nairobi - Kenya</span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+             </ul>
+          </div>  
+        </nav>
+        <p>Copyright &#169; 2024 Sharon Muiruri. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
+
