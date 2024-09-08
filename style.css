@@ -195,7 +195,7 @@ section {
 }
 
 .section__text__p2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -272,7 +272,7 @@ section {
 
 #about {
     position: relative;
-    height: 50vh;
+    height: 44vh;
 }
 
 .about-containers {
@@ -321,7 +321,7 @@ section {
 /* SKILLS SECTION */
 #skills{
   position: relative;
-  height: 48vh;
+  height: 56vh;
 }
 
 hr{
