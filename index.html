@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
 </head>
 <body>
 
@@ -89,7 +92,7 @@
                     <br>
                     <div class="btn-container">
                         <button class="btn btn-color-2"
-                         onclick="window.open('./assets/Sharon Muiruri_CV.pdf')">
+                         onclick="window.open('./assets/Sharon Muiruri.CV.pdf')">
                         Download CV
                         </button>
                         <button class="btn btn-color-1"
@@ -228,11 +231,10 @@
                         Performed feature engineering and used SMOTE to balance the dataset.
                         </li>
                      <li>
-                        Built 5 classifier models: Logistic Regression, Decision Trees Classifier, Random Forest Classifier, Gradient Boosting and XGBoost. The best performing model was the Random Forest with the highest ROC AUC score.
+                        Built 5 classifier models: Logistic Regression, Decision Trees Classifier, Random Forest Classifier, Gradient Boosting and XGBoost.
                      </li> 
                     </ul>
                 </p> 
-                <br>
                 <br>
                 <div class="btn-container">
                     <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/swariara/credit-card-default-prediction'">
@@ -253,14 +255,14 @@
                             Engineered a predictive model to forecast 6 weeks of daily sales for 1115 Rossman stores. 
                         </li>
                         <li>
-                            I utilised Python libraries such as Scikit-learn and Pandas for data analysis and modelling, imputed the missing values and performed outlier treatment using Z-score.
+                            Utilised Python libraries such as Scikit-learn and Pandas for data analysis and modelling, imputed the missing values and performed outlier treatment using Z-score.
                         </li>
                         <li>
-                        I fit 4 regression models: Linear Regression, Stochastic Gradient Descent Regressor, Decision Trees Regressor and Random Forest Regressor. The best performing model was the Random Forest with the lowest RMSE score of 726, and highest R2 score of 0.96.
+                            Built 4 regression models: Linear Regression, Stochastic Gradient Descent Regressor, Decision Trees Regressor and Random Forest Regressor.
                         </li>
                     </ul>
                 </p>
-                <br>  
+                 <br>
                 <div class="btn-container">
                     <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/swariara/store_sales_forecasting'">
                      Github
@@ -269,7 +271,7 @@
             </div>
              <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/project-3.jpeg"
+                    <img src="./assets/project-3.jpg"
                     alt="Project 3"
                     class="project-img"/>
                 </div>
@@ -280,14 +282,14 @@
                            Developed a model that can predict which booking in the hotel is going to be cancelled in advance and also help in formulating profitable policies for cancellations and refunds. 
                         </li>
                         <li>
-                            Performed univariate and bivariate analysis to analyse the data and find which factors have a high influence on booking cancellations in the hotel.
+                            Performed univariate and bivariate analysis.
                         </li>
                         <li>
-                            Built 4 classification models: Logistic Regression, SVM, Decision Trees and Random Forest. The best performing model was the Random Forest with an accuracy score of 90%. 
+                            Built 4 classification models: Logistic Regression, Support Vector Machine, Decision Trees Classifier and Random Forest Classifier. 
                         </li>
                     </ul>
                 </p> 
-                <br>   
+                <br> 
                 <div class="btn-container">
                     <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/swariara/hotel-booking-cancellation-prediction'">
                      Github
@@ -355,6 +357,9 @@
         </nav>
         <p>Copyright &#169; 2024 Sharon Muiruri. All Rights Reserved.</p>
     </footer>
+
+    <!-- swiper js -->
+     <script src="js/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
     </body>
