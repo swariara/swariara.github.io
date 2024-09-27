@@ -53,22 +53,55 @@
         margin-bottom: 0;
         
     }
-    .details-container {
+    /* .details-container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         
+    } */
+    .details-container {
+        display: flex;
+        flex-direction: row; /* Default to row for larger screens */
+        align-items: flex-start;
+        gap: 1rem; /* Optional: spacing between containers */
+    }
+    
+    .details-container > div { /* Assuming each container is a div */
+        flex: 1; /* Allow them to grow equally on larger screens */
+        width: 100%; /* Ensure each container takes full width */
+        margin-bottom: 1rem; /* Optional: spacing between stacked containers */
+    }
+
+    .details-container {
+        flex-direction: column; /* Change to column for smaller screens */
+       
     }
    
     article {
         font-size: 1rem;
     }
+
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
     }
     .about-containers, .contact-info-upper-container, .btn-container{
         flex-wrap: wrap;
+    }
+    .article-container {
+        display: flex;
+        text-align: initial;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center; /* Center vertically if needed */
+    }
+    
+    .article-container img {
+        width: 200px; /* Adjust this value as needed */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Ensure responsiveness */
     }
     .contact-info-container{
         margin: 0;
