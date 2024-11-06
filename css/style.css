@@ -12,6 +12,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
 }
 
 html {
@@ -455,6 +456,42 @@ article.icon{
 } 
 
 
+/* SWIPER */
+.swiper {
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  border-radius: 8px; 
+}
+
+.swiper-slide img {
+  width: 25%; 
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgba(69, 129, 220, 0.955);
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+  background-color: rgba(69, 129, 220, 0.955);
+}
 /* PROJECTS SECTION */
 
 #projects {
@@ -477,10 +514,14 @@ article.icon{
   height: 50%;
 }
 
-.project-title{
-  margin: 1rem;
+/* Project Title */
+.project-title {
+  font-size: 24px;
   color: rgba(69, 129, 220, 0.955);
-  font-size: 1rem;
+  margin: 1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .project-btn{
@@ -488,22 +529,31 @@ article.icon{
   border-color: rgb(170, 204, 249);
 }
 
-.padd-15{
-    padding-left: 15px;
-    padding-right: 15px;
+
+
+.padd-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 20px;
+  font-size: 16px;
+  color: #555555;
+  text-align: left;
+  line-height: 1.6;
 }
 
 ul li{
-    margin-left: 5px;
-    text-align: left;
+    margin-left: 7px;
+    text-align: justify;
     text-align-last: left;
     font-weight: 400;
 
 }
 
 li{
-    line-height: 25px;
+    line-height: 30px;
     font-size: .915rem;
+    text-align: left;
+    text-align-last: left;
 }
 
 
