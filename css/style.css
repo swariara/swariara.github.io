@@ -445,7 +445,7 @@ article.icon{
   font-size: 14px;
   margin-bottom: 2px;
   text-transform: capitalize;
-  color: rgb(72, 72, 72);
+  color: rgb(85, 85, 85);
 }
 
 .timeline-text {
@@ -453,8 +453,7 @@ article.icon{
   text-align: justify;
   font-size: 13px;
   font-weight: 400;
-  color: rgb(56, 62, 66);
-  /* color: rgb(72, 72, 72); */
+  color:  #242424;
 } 
 
 
