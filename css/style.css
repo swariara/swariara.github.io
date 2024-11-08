@@ -256,7 +256,7 @@ section {
 }
 
 .btn-color-2 {
-    background: rgb(170, 204, 249) 0.1rem solid;
+    background: rgb(171, 207, 255) 0.1rem solid;
     color: rgba(70, 118, 239, 0.955);
     border-color: rgba(70, 118, 239, 0.955) 0.1rem solid;
 }
@@ -528,6 +528,16 @@ article.icon{
 .project-btn{
   color: white;
   border-color: rgb(170, 204, 249);
+}
+
+.powerpoint-btn{
+  color: white;
+  border-color: rgb(170, 204, 249);
+}
+
+
+.powerpoint-btn:hover {
+  border: rgba(70, 118, 239, 0.955) 0.1rem solid;
 }
 
 
