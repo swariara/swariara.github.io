@@ -442,17 +442,19 @@ article.icon{
 }
 .timeline__subtitle{
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 2px;
   text-transform: capitalize;
-  color: rgb(56, 62, 66);
+  color: rgb(72, 72, 72);
 }
 
-.timeline-text{
-  line-height: 25px;
+.timeline-text {
+  line-height: 20px;
   text-align: justify;
-  font-size: 14px;
-  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(56, 62, 66);
+  /* color: rgb(72, 72, 72); */
 } 
 
 
