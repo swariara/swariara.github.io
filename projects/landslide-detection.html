@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landslide Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-article {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #dee3e7; /* soft light grey background */
+      color: #1d1f20; /* deep slate for body text */
+      line-height: 1.5;
+      border: 1px solid #d1d3d4; /* subtle border for definition */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* soft floating shadow */
+      border-radius: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* cleaner body font */
+    }
+
+    .project-article img {
+      max-width: 100%;
+      margin: 2rem 0;
+      border-radius: 8px; /* smooth rounded edges */
+    }
+
+    .project-article h1,
+    .project-article h2,
+    .project-article h3 {
+      margin-top: 1rem;
+      color: #1b2c41; /* navy blue for headings */
+      font-family: "Georgia", serif; /* classic elegant headings */
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #3f5a75;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #2c3e56; /* Darker variant for hover */
+      text-decoration: underline;
+    }
+    .impact-highlight {
+      background: #e8f4f8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #3f5a75;
+      margin: 1.5rem 0;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<!-- <article class="project-article">
+  <a class="back-link" href="../index.html">&larr; Back to Portfolio</a>
+
+  <h1>Landslide Detection Using Satellite Imagery</h1>
+
+  <p><strong>Tech Stack:</strong> Python, NumPy, TensorFlow/Keras, XGBoost, LightGBM, Keras Tuner, Sentinel-1 SAR, Sentinel-2 optical imagery, OpenCV, Scikit-learn</p>
+
+  <p>
+   This project focuses on detecting landslides using satellite imagery and deep learning. I combined Sentinel-1 radar and Sentinel-2 optical data to build a hybrid detection system using CNNs and ensemble models for robust landslide identification.
+  </p>
+
+  <h2>Problem Statement</h2>
+  <p>
+   Landslides cause thousands of casualties annually and billions in economic losses worldwide. Manual identification of affected areas delays critical disaster response, often preventing timely evacuation and rescue operations. This project automates landslide detection using satellite imagery to enable rapid assessment of disaster zones, supporting emergency response teams and risk management authorities. 
+  </p>
+
+  <h2>Overview</h2>
+  <ul>
+    <li><strong>Goal:</strong> Automatically identify landslides using multi-modal satellite data</li>
+    <li><strong>Data:</strong> 12-band tiles from Sentinel-1 SAR and Sentinel-2 optical imagery (256×256 patches)</li>
+    <li><strong>Model:</strong> Hybrid CNN + XGBoost + LightGBM (Stacked Ensemble)</li>
+    <li><strong>Best F1-score:</strong> 0.88 (Stacked Ensemble Architecture)</li>
+  </ul>
+
+  <h2>Technical Approach</h2>
+
+  <p><strong>Data Engineering:</strong>Processed 12-band satellite imagery (Sentinel-1 SAR + Sentinel-2 optical) with custom preprocessing pipeline, handling multi-modal data fusion and normalization for optimal model performance.</p>
+  <p><strong>Feature Engineering:</strong>Extracted spectral indices (NDVI, NDWI, spectral ratios) and statistical features to enhance model performance and capture landslide-specific signatures in the satellite data.</p>
+  <p><strong>Model Architecture:</strong>Implemented hybrid CNN-ensemble approach combining deep learning with gradient boosting (XGBoost, LightGBM) for robust landslide classification and improved generalization.</p>
+  <p><strong>optimization:</strong>Used Keras Tuner for hyperparameter optimization and developed custom data augmentation techniques specifically designed for remote sensing applications.</p>
+  <p><strong>Evaluation:</strong>
+
+  <h2>Highlights</h2>
+  <ul>
+    <li>Built a Keras data generator with augmentation for remote sensing</li>
+    <li>Extracted NDVI, stats, and band ratios for tabular features</li>
+    <li>Stacked deep and classical models for better generalization</li>
+  </ul>
+
+  <p>
+    <a href="https://github.com/swariara/Landslide-Detection" target="_blank">🔗 View Code on GitHub</a>
+  </p>
+</article> -->
+
+    <article class="project-article">
+      <a class="back-link" href="../index.html">&larr; Back to Portfolio</a>
+      <h1>Landslide Detection Using Satellite Imagery</h1>
+      <p><strong>Tech Stack:</strong> Python, NumPy, TensorFlow/Keras, XGBoost, LightGBM, Sentinel-1 SAR, Sentinel-2 optical imagery, OpenCV, Scikit-learn</p>
+      
+      <div class="impact-highlight">
+        Developed an automated landslide detection system achieving 88% F1-score, potentially enabling faster disaster response and risk assessment for mountainous regions.
+      </div>
+      
+      <p>
+        This project focuses on detecting landslides using satellite imagery and deep learning. I combined Sentinel-1 radar and Sentinel-2 optical data to build a hybrid detection system using CNNs and ensemble models.
+      </p>
+      
+      <h2>Problem Statement</h2>
+      <p>
+        Landslides cause thousands of casualties annually and billions in economic losses. Manual identification delays critical disaster response. This project automates landslide detection using satellite imagery to enable rapid assessment of disaster zones for emergency response teams.
+      </p>
+      
+      <h2>Overview</h2>
+      <ul>
+        <li><strong>Goal:</strong> Automatically identify landslides using multi-modal satellite data</li>
+        <li><strong>Data:</strong> 12-band tiles from Sentinel-1 SAR and Sentinel-2 optical imagery (256×256 patches)</li>
+        <li><strong>Model:</strong> Hybrid CNN + XGBoost + LightGBM (Stacked Ensemble)</li>
+        <li><strong>Best F1-score:</strong> 0.88 (Stacked Ensemble Architecture)</li>
+      </ul>
+      
+      <h2>Technical Approach</h2>
+      <p><strong>Data Engineering:</strong> Processed 12-band satellite imagery (Sentinel-1 SAR + Sentinel-2 optical), handled class imbalance and normalized bands.</p>
+      
+      <p><strong>Feature Engineering:</strong> Extracted spectral indices (NDVI, NDWI) and statistical features to capture landslide-specific signatures.</p>
+      
+      <p><strong>Model Architecture:</strong> Implemented hybrid CNN-ensemble approach combining deep learning with gradient boosting (XGBoost, LightGBM).</p>
+      
+      <p><strong>Optimization:</strong> Used Keras Tuner for hyperparameter optimization and custom data augmentation for remote sensing applications.</p>
+      
+      <h2>Key Achievements</h2>
+      <ul>
+        <li><strong>88% F1-score</strong> on landslide detection task with high precision and recall balance</li>
+        <li>Successfully combined multi-modal satellite data (radar + optical) for enhanced detection</li>
+        <li>Built scalable pipeline for processing large-scale geospatial data</li>
+        <li>Developed custom data augmentation optimized for remote sensing applications</li>
+        <li>Implemented novel stacking approach combining deep learning and classical ML</li>
+      </ul>
+      
+      <h2>Impact</h2>
+      <p>
+        This system reduces landslide assessment time from hours to minutes with 88% accuracy. Suitable for emergency response planning, post-disaster damage assessment, and proactive risk monitoring in landslide-prone areas.
+      </p>
+      
+      <p>
+        <a href="https://github.com/swariara/Landslide-Detection" target="_blank">🔗 View Code on GitHub</a>
+      </p>
+    </article>
+
+</body>
+</html>

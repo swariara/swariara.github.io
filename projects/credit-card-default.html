@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landslide Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-article {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #dee3e7; /* soft light grey background */
+      color: #1d1f20; /* deep slate for body text */
+      line-height: 1.5;
+      border: 1px solid #d1d3d4; /* subtle border for definition */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* soft floating shadow */
+      border-radius: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* cleaner body font */
+    }
+
+    .project-article img {
+      max-width: 100%;
+      margin: 2rem 0;
+      border-radius: 8px; /* smooth rounded edges */
+    }
+
+    .project-article h1,
+    .project-article h2,
+    .project-article h3 {
+      margin-top: 1rem;
+      color: #1b2c41; /* navy blue for headings */
+      font-family: "Georgia", serif; /* classic elegant headings */
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #3f5a75;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #2c3e56; /* Darker variant for hover */
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+    <article class="project-article">
+        <a class="back-link" href="../index.html">&larr; Back to Portfolio</a>
+
+        <h1>Credit Card Default Prediction Using Machine Learning</h1>
+
+        <p><strong>Tech Stack:</strong> Python, pandas, scikit-learn, Logistic Regression, XGBoost, Gradient Boosting, Random Forest</p>
+
+        <p>
+            This project focuses on predicting customers likely to default on credit card payments by leveraging machine learning classification techniques. It aims to help financial institutions manage credit risk more effectively.
+        </p>
+
+        <h2>Problem Statement</h2>
+        <p>
+            Credit card defaults can cause significant financial losses for banks and lenders. Accurately predicting default risk enables proactive management, reducing losses and improving customer engagement strategies.
+        </p>
+
+        <h2>Overview</h2>
+        <ul>
+            <li><strong>Goal:</strong> Predict credit card payment defaults to reduce financial risk</li>
+            <li><strong>Data:</strong> Customer credit history, demographic, and payment behavior features</li>
+            <li><strong>Models:</strong> Logistic Regression, Decision Trees, Random Forest, XGBoost, Gradient Boosting</li>
+            <li><strong>Best Performance:</strong> Random Forest with highest ROC AUC score</li>
+        </ul>
+
+        <h2>Approach</h2>
+
+        <p><strong>Data Cleaning & Preprocessing:</strong> Handled missing values, encoded categorical variables, and scaled features.</p>
+        <p><strong>Balancing Dataset:</strong> Applied SMOTE to address class imbalance and improve model robustness.</p>
+        <p><strong>Modeling:</strong> Built and tuned five classification models, evaluated with ROC AUC, precision, recall, and F1-score.</p>
+        <p><strong>Evaluation:</strong> Selected Random Forest based on ROC AUC; analyzed confusion matrices and feature importance.</p>
+
+        <h2>Highlights</h2>
+        <ul>
+            <li>Implemented SMOTE to overcome class imbalance in credit default data</li>
+            <li>Compared multiple classification algorithms to find best predictive performance</li>
+            <li>Enhanced credit risk management and optimized customer collection strategies</li>
+        </ul>
+
+        <p>
+            <a href="https://github.com/swariara/credit-card-default-prediction" target="_blank">🔗 View Code on GitHub</a>
+        </p>
+    </article>
+
+
+</body>
+</html>

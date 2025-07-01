@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landslide Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-article {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #dee3e7; /* soft light grey background */
+      color: #1d1f20; /* deep slate for body text */
+      line-height: 1.5;
+      border: 1px solid #d1d3d4; /* subtle border for definition */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* soft floating shadow */
+      border-radius: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* cleaner body font */
+    }
+
+    .project-article img {
+      max-width: 100%;
+      margin: 2rem 0;
+      border-radius: 8px; /* smooth rounded edges */
+    }
+
+    .project-article h1,
+    .project-article h2,
+    .project-article h3 {
+      margin-top: 1rem;
+      color: #1b2c41; /* navy blue for headings */
+      font-family: "Georgia", serif; /* classic elegant headings */
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #3f5a75;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #2c3e56; /* Darker variant for hover */
+      text-decoration: underline;
+    }
+    .impact-highlight {
+      background: #e8f4f8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #3f5a75;
+      margin: 1.5rem 0;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+    <article class="project-article">
+        <a class="back-link" href="../index.html">&larr; Back to Portfolio</a>
+        <h1>Smart Energy Optimization</h1>
+        
+        <div class="tech-stack">
+            <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib, LightGBM, Random Forest</p>
+        </div>
+
+        <div class="impact-highlight">
+            Developed an intelligent energy management system that optimizes power source selection across multiple sites, reducing energy costs by up to 40% while ensuring 100% reliability during grid outages.
+        </div>
+
+        <p>
+            This project creates an AI-powered energy optimization system for remote sites with hybrid power infrastructure. The system intelligently manages solar panels, grid connections, diesel generators, and battery storage to minimize costs while maintaining reliable power supply.
+        </p>
+
+        <h2>Problem Statement</h2>
+        <p>
+            Remote facilities like cell towers and rural installations face complex energy management challenges with multiple power sources at different costs. Manual energy management leads to suboptimal decisions, higher operational costs, and potential power outages. This project automates energy strategy optimization to minimize costs while ensuring continuous power availability.
+        </p>
+
+        <h2>Overview</h2>
+        <ul>
+            <li><strong>Goal:</strong> Optimize energy source selection across 10+ remote sites with hybrid power systems</li>
+            <li><strong>Data:</strong> Energy consumption patterns, solar generation forecasts, weather conditions, and grid outage schedules</li>
+            <li><strong>Model:</strong> Random Forest Regressor for solar prediction + Rule-based optimization engine</li>
+            <li><strong>Strategy:</strong> Greedy algorithm prioritizing cheapest energy sources (Solar → Grid → Diesel)</li>
+        </ul>
+
+        <h2>Technical Approach</h2>
+        <p><strong>Data Integration:</strong> Combined consumption data, site infrastructure specs, solar/weather conditions, and grid outage schedules into unified analysis framework.</p>
+
+        <p><strong>Feature Engineering:</strong> Created time-based cyclical features (hour/day sine/cosine), weather interaction terms, and lag features to capture temporal patterns in energy generation and consumption.</p>
+
+        <p><strong>Solar Prediction Model:</strong> Implemented Random Forest model with 12+ weather and time features to forecast solar energy output with high accuracy for next-week planning.</p>
+
+        <p><strong>Battery Simulation:</strong> Developed physics-based battery model tracking State of Charge (SOC) with charge/discharge coefficients and Depth of Discharge (DOD) constraints.</p>
+
+        <p><strong>Strategy Optimization:</strong> Built greedy optimization algorithm that selects energy sources based on cost hierarchy while respecting infrastructure constraints and reliability requirements.</p>
+
+        <h2>Key Achievements</h2>
+        <ul>
+            <li><strong>40% cost reduction</strong> through intelligent energy source prioritization (solar-first strategy)</li>
+            <li>Successfully managed <strong>10 remote sites</strong> with varying infrastructure and consumption patterns</li>
+            <li><strong>100% uptime reliability</strong> during grid outages through optimized backup power management</li>
+            <li>Automated <strong>weekly strategy generation</strong> covering 672 hours of operation per site</li>
+            <li>Achieved <strong>35% renewable energy usage</strong> across the entire network</li>
+            <li>Built scalable system handling multiple data sources and real-time optimization</li>
+        </ul>
+
+        <!-- <h2>System Architecture</h2>
+        <p><strong>Data Pipeline:</strong> Processes consumption logs, weather data, and infrastructure specs into machine learning ready format with comprehensive feature engineering.</p>
+
+        <p><strong>Prediction Engine:</strong> Random Forest model forecasts solar generation using weather patterns, seasonal cycles, and site-specific characteristics.</p>
+
+        <p><strong>Optimization Core:</strong> Multi-constraint optimization engine balancing cost minimization with reliability requirements and battery health management.</p>
+
+        <p><strong>Strategy Output:</strong> Generates hourly energy source recommendations for each site, exportable as CSV for operational deployment.</p> -->
+
+        <h2>Business Impact</h2>
+        <p>
+            This system transforms energy management from reactive to proactive, reducing operational costs while improving reliability. The automated optimization replaces manual decision-making, enabling consistent cost savings across all sites. With solar energy covering 35% of total demand and strategic diesel usage only during critical periods, the system demonstrates significant potential for scaling to larger facility networks.
+        </p>
+
+        <p>
+            The solution is particularly valuable for telecommunications companies, remote research stations, and distributed infrastructure operators seeking to optimize energy costs while maintaining service reliability.
+        </p>
+
+        <p>
+            <a href="https://github.com/swariara/Energy-Optimization" target="_blank">🔗 View Code on GitHub</a>
+        </p>
+    </article>
+  
+</body>
+</html>

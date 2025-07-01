@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Market Forecasting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-article {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #dee3e7; /* soft light grey background */
+      color: #1d1f20; /* deep slate for body text */
+      line-height: 1.5;
+      border: 1px solid #d1d3d4; /* subtle border for definition */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* soft floating shadow */
+      border-radius: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* cleaner body font */
+    }
+    .project-article img {
+      max-width: 100%;
+      margin: 2rem 0;
+      border-radius: 8px; /* smooth rounded edges */
+    }
+    .project-article h1,
+    .project-article h2,
+    .project-article h3 {
+      margin-top: 1rem;
+      color: #1b2c41; /* navy blue for headings */
+      font-family: "Georgia", serif; /* classic elegant headings */
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #3f5a75;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #2c3e56; /* Darker variant for hover */
+      text-decoration: underline;
+    }
+    .impact-highlight {
+      background: #e8f4f8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #3f5a75;
+      margin: 1.5rem 0;
+      font-weight: 500;
+    }
+    .disclaimer {
+      background: #fff3cd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #ffc107;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+<article class="project-article">
+  <a class="back-link" href="../index.html">&larr; Back to Portfolio</a>
+  <h1>Stock Market Forecasting</h1>
+  <p><strong>Tech Stack:</strong> Python, Pandas, NumPy, Matplotlib, Scikit-learn, yfinance, Statsmodels, TensorFlow/Keras</p>
+  
+  <!-- <div class="impact-highlight">
+    Achieved 80-90% improvement in forecasting accuracy using LSTM over traditional ARIMA models, with RMSE scores as low as 2.90 for Amazon stock prediction.
+  </div> -->
+  
+  <p>
+    This project explores time series forecasting techniques by comparing statistical models (ARIMA, SARIMA) with deep learning approaches (LSTM) for predicting stock prices of three major tech companies—Google (GOOGL), Apple (AAPL), and Amazon (AMZN).
+  </p>
+  
+  <h2>Problem Statement</h2>
+  <p>
+    Stock price prediction is one of the most challenging problems in financial analysis due to market volatility and complex temporal dependencies. This project explores whether deep learning models can capture sequential patterns better than traditional statistical approaches for short-term price forecasting, while demonstrating advanced time series modeling techniques.
+  </p>
+  
+  <h2>Overview</h2>
+  <ul>
+    <li><strong>Goal:</strong> Compare forecasting performance across different model architectures.</li>
+    <li><strong>Data:</strong> Daily stock price data for GOOGL, AAPL, and AMZN via yfinance API.</li>
+    <li><strong>Models:</strong> ARIMA, SARIMA, LSTM Neural Networks.</li>
+    <li><strong>Evaluation:</strong> RMSE, MAE across all three stocks.</li>
+    <li><strong>Best RMSE:</strong> LSTM achieved 2.90 (AMZN), 3.37 (GOOGL), 4.38 (AAPL).</li>
+  </ul>
+  
+  <h2>Technical Approach</h2>
+  <p><strong>Data Engineering:</strong> Collected and preprocessed historical stock data with proper scaling and normalization for neural network training.</p>
+  
+  <p><strong>Feature Engineering:</strong> Created lag features, rolling statistics (moving averages, volatility), and technical indicators to capture market dynamics.</p>
+  
+  <p><strong>Statistical Modeling:</strong> Implemented ARIMA and SARIMA models using Statsmodels, with proper stationarity testing and parameter optimization.</p>
+  
+  <p><strong>Deep Learning Architecture:</strong> Designed LSTM neural network with multiple layers, dropout regularization, and optimized sequence length for temporal pattern recognition.</p>
+  
+  <p><strong>Model Validation:</strong> Used time-based train/validation/test splits to prevent data leakage and ensure realistic evaluation.</p>
+  
+  <h2>Key Achievements</h2>
+  <ul>
+    <li>Successfully implemented and compared three different forecasting approaches.</li>
+    <li>Demonstrated LSTM's superior ability to capture non-linear temporal dependencies.</li>
+    <li>Built robust evaluation framework with multiple performance metrics.</li>
+    <li>Created scalable pipeline for multi-stock analysis and comparison.</li>
+    <li>Achieved consistent performance improvements across all three tech stocks.</li>
+  </ul>
+  
+  <!-- <h2>Technical Skills Demonstrated</h2>
+  <ul>
+    <li>Time series data preprocessing and feature engineering techniques</li>
+    <li>Statistical modeling with ARIMA/SARIMA for baseline comparison</li>
+    <li>Deep learning architecture design for sequential data analysis</li>
+    <li>Model evaluation and performance comparison methodologies</li>
+    <li>Financial data acquisition and API integration</li>
+    <li>Hyperparameter tuning and model optimization</li>
+  </ul> -->
+  
+  <!-- <div class="disclaimer">
+    <strong>Important Note:</strong> This project demonstrates time series modeling techniques and comparative analysis of different forecasting approaches. Stock markets are influenced by countless unpredictable factors, and this model is designed for educational purposes to showcase technical skills rather than provide investment advice.
+  </div> -->
+  
+  <h2>Results & Analysis</h2>
+  <p>
+    The LSTM model dramatically outperformed traditional statistical methods across all three stocks:
+  </p>
+  <ul>
+    <li><strong>AAPL:</strong> LSTM RMSE (4.38) vs ARIMA (26.54) - 83% improvement</li>
+    <li><strong>AMZN:</strong> LSTM RMSE (2.90) vs ARIMA (33.42) - 91% improvement</li>
+    <li><strong>GOOGL:</strong> LSTM RMSE (3.37) vs ARIMA (27.11) - 88% improvement</li>
+  </ul>
+  <p>
+    The results demonstrate deep learning's superior ability to capture complex temporal patterns in financial data. LSTM consistently achieved 80-90% better accuracy than traditional methods, though performance varied during high volatility periods, highlighting both the potential and limitations of machine learning in financial forecasting.
+  </p>
+  
+  <p>
+    <a href="https://github.com/swariara/stock-market-forecasting" target="_blank">🔗 View Code on GitHub</a>
+  </p>
+</article>
+</body>
+</html>
