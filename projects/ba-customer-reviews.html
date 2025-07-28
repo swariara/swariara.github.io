@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BA Customer Reviews Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    .project-article {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #dee3e7; /* soft light grey background */
+      color: #1d1f20; /* deep slate for body text */
+      line-height: 1.5;
+      border: 1px solid #d1d3d4; /* subtle border for definition */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* soft floating shadow */
+      border-radius: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* cleaner body font */
+    }
+
+    .project-article img {
+      max-width: 100%;
+      margin: 2rem 0;
+      border-radius: 8px; /* smooth rounded edges */
+    }
+
+    .project-article h1,
+    .project-article h2,
+    .project-article h3 {
+      margin-top: 1rem;
+      color: #1b2c41; /* navy blue for headings */
+      font-family: "Georgia", serif; /* classic elegant headings */
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      color: #3f5a75;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #2c3e56; /* Darker variant for hover */
+      text-decoration: underline;
+    }
+    .impact-highlight {
+      background: #e8f4f8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #3f5a75;
+      margin: 1.5rem 0;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <article class="project-article">
+  <a class="back-link" href="../index.html">&larr; Back to Portfolio</a>
+
+  <h1>Scraping and Analyzing British Airways Customer Reviews</h1>
+
+  <p><strong>Tech Stack:</strong> Python, BeautifulSoup, requests, pandas, matplotlib, seaborn, NLTK (VADER), WordCloud</p>
+
+  <p>
+    This project involved scraping thousands of customer reviews for British Airways (BA) from the Skytrax website and analyzing them to extract insights on customer satisfaction, service quality, and sentiment.
+  </p>
+
+  <h2>Problem Statement</h2>
+  <p>
+    British Airways (BA) is the flag carrier of the United Kingdom, operating daily international and domestic flights. With customer satisfaction being central to its brand, BA relies on customer feedback to inform business strategy and service improvements. It receives thousands of reviews across third-party platforms like Skytrax. These reviews contain valuable but unstructured data on customer experiences. The challenge is to extract, clean, and analyze this data to uncover actionable insights for decision-makers at BA.
+  </p>
+
+  <h2>Overview</h2>
+  <ul>
+    <li><strong>Goal:</strong> Scrape and analyze customer reviews to evaluate satisfaction and highlight key areas of feedback</li>
+    <li><strong>Data:</strong> 3,877 reviews scraped from Skytrax, including ratings, travel context, and full text reviews</li>
+    <li><strong>Tools:</strong> BeautifulSoup for scraping, pandas for cleaning, NLTK VADER for sentiment analysis, matplotlib/seaborn for visualization</li>
+    <li><strong>Outcome:</strong> Identified satisfaction trends, category ratings, traveler preferences, and sentiment distribution</li>
+  </ul>
+
+  <h2>Approach</h2>
+
+  <p><strong>Data Collection:</strong> Used BeautifulSoup and requests to scrape 50 pages of British Airways reviews from Skytrax, extracting review text, country, cabin class, route, traveler type, category ratings, and recommendation status.</p>
+
+  <p><strong>Data Cleaning:</strong> Addressed missing values using strategies like median imputation and placeholder categories. Dates were parsed and review text was cleaned using regular expressions.</p>
+
+  <p><strong>Exploratory Data Analysis:</strong> Visualized rating distributions, passenger recommendations, cabin-level satisfaction, and cross-country comparisons. Reviewed category-wise average scores (e.g., food, WiFi, ground service).</p>
+
+  <p><strong>Text and Sentiment Analysis:</strong> Generated a word cloud to highlight common review themes. Applied NLTK’s VADER sentiment analyzer to classify reviews into Positive, Neutral, or Negative and analyzed the sentiment distribution.</p>
+
+  <h2>Highlights</h2>
+  <ul>
+    <li>Scraped and structured 3,877 detailed reviews from Skytrax, including 15 different attributes</li>
+    <li>57% of reviews were classified as positive, but many showed dissatisfaction in areas like WiFi and food</li>
+    <li>Business Class and First Class travelers gave significantly higher average scores than Economy travelers</li>
+    <li>Passengers from 75 unique countries shared their feedback, highlighting global perspectives on BA's service</li>
+    <li>Generated compelling visualizations for data storytelling and executive-level presentations</li>
+  </ul>
+
+  <h2>Key Insights</h2>
+  <ul>
+    <li>“Value for money” and “WiFi connectivity” were the most poorly rated service features</li>
+    <li>Travelers in higher cabins reported better experiences and gave significantly higher ratings</li>
+    <li>Review sentiment aligns closely with star ratings, validating VADER’s performance on this data</li>
+    <li>Text feedback reveals consistent complaints around delays, baggage handling, and poor meals</li>
+  </ul>
+
+  <p>
+    <a href="https://github.com/swariara/BA-customer-reviews-analysis" target="_blank">🔗 View Code on GitHub</a>
+  </p>
+</article>
+
+</body>
+</html>
